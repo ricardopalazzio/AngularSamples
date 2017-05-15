@@ -1,0 +1,13 @@
+<h2>[NgClass] teste</h2>
+
+<p [class.cor-fundo]="true">  teste  classe com class binding </p>
+
+<p [class.cor-fundo]="valorClassBinding">  teste  classe com class binding alterado pelo boao </p>
+<button (click)="mudarClassBinding()">Mudar valor</button>
+
+<p [ngClass]="{'cor-fundo' : valorClassBinding ,
+'cor-letra': valorClassBinding,
+'estilo-letra': valorClassBinding,
+'borda-paragrafo': valorClassBinding}"> teste com ngClass</p>
+
+<p [ngClass]="classes()">Paragrado com classe method</p>

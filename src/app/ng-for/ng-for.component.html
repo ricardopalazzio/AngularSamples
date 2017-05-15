@@ -1,0 +1,7 @@
+<ul *ngFor="let	nome	of	nomes">
+  <li>nome da pessoa é: {{nome.nome}} </li>
+</ul>
+
+<div *ngFor="let	nome	of	nomes, let i = index, trackBy:meuSave">
+  <p>nome da pessoa é: {{nome.nome}}</p><input type="text"  [(ngModel)]="nomes[i].nome">
+</div>

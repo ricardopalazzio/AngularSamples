@@ -1,0 +1,11 @@
+<h2>*ng-if</h2>
+
+<button (click)="mostrar()"> Mostrar escola</button>
+<br>
+<p *ngIf="getValor()"> teste ngIf </p>
+
+<br>
+
+<p *ngIf="cursos.length  ==0 "> Nâo temos o cursos disponível</p>
+<p *ngIf="cursos.length > 0"> Temos o cursos disponível agora</p>
+<button (click)ng gc ="addCurso()">Adicionar novo curso</button>
